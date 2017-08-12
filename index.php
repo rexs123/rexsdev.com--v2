@@ -19,13 +19,12 @@
 		<meta name="twitter:site" content="@rexs183">
 
 		<meta name="robots" content="index,follow,noodp,noydir">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha256-NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w=" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" integrity="sha256-HxaKz5E/eBbvhGMNwhWRPrAR9i/lG1JeT4mD6hCQ7s4=" crossorigin="anonymous" />
 		<link href="https://rexsdev.com/assets/css/responsive.min.css" rel="stylesheet">
 		<link href="https://rexsdev.com/assets/css/style.min.css" rel="stylesheet">
 		<link href="https://rexsdev.com/assets/css/rexsdev.min.css" rel="stylesheet">
-		<link href="https://rexsdev.com/assets/css/image-server.min.css" rel="stylesheet">
 
 		<link rel="apple-touch-icon" sizes="57x57" href="https://rexsdev.com/assets/img/favicon/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="https://rexsdev.com/assets/img/favicon/apple-icon-60x60.png">
@@ -47,8 +46,13 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="container">
-    <h1>Coming Soon</h1>
-  </div>
+	<div class="container">
+		<div class="col-md-6 col-md-offset-3">
+			<img src="https://i.rexsdev.com/y0qFd.gif" alt="Rexs Development &amp; Design" class="img-responsive">
+		</div>
+		<div class="col-md-6 col-md-offset-3 text-center">
+			<h1>Rexs Design &amp; Development</h1>
+		</div>
+	</div>
 </body>
 </html>

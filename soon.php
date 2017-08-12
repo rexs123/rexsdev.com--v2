@@ -2,9 +2,6 @@
   <div class="col-md-2 hidden-xs hidden-sm">
   </div>
   <div class="col-md-10" id="timeline">
-    <?php
-    include("layout/closed.php");
-    ?>
     <div class="main-panel">
       <h1>
         Soon
