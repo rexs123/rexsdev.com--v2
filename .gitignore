@@ -47,3 +47,4 @@ Temporary Items
 .apdisk
 *.ftpconfig
 error_log
+system/data.php
