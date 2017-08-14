@@ -1,3 +1,4 @@
+<?php include("./system/config.php"); ?>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
@@ -40,19 +41,53 @@
 		<link rel="icon" type="image/png" sizes="96x96" href="https://rexsdev.com/assets/img/favicon/favicon-96x96.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="https://rexsdev.com/assets/img/favicon/favicon-16x16.png">
 		<link rel="manifest" href="https://rexsdev.com/assets/img/favicon/manifest.json">
-		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileColor" content="#ffb204">
 		<meta name="msapplication-TileImage" content="https://rexsdev.com/assets/img/favicon/ms-icon-144x144.png">
-		<meta name="theme-color" content="#ffffff">
+		<meta name="theme-color" content="#ffb204">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
 </head>
 <body>
+<div id="header">
 	<div class="container">
-		<div class="col-md-6 col-md-offset-3">
-			<img src="https://i.rexsdev.com/y0qFd.gif" alt="Rexs Development &amp; Design" class="img-responsive">
-		</div>
-		<div class="col-md-6 col-md-offset-3 text-center">
-			<h1>Rexs Design &amp; Development</h1>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3 text-center">
+					<img src="https://i.rexsdev.com/y0qFd.gif" alt="Rexs Development &amp; Design" class="img-responsive img-center" draggable="false">
+					<a href="./partner">Partners</a> | <a href="./soon">Soon&trade; List</a> | <a href="./calender">Calender</a> | <a href="https://tactserv.com">Hosting</a>
+			</div>
 		</div>
 	</div>
+</div>
+<div id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<h1>About Me</h1>
+					<br>
+					<p>Bacon ipsum dolor amet meatloaf doner capicola pig chicken biltong. Shoulder venison pork loin swine, chicken cow jowl spare ribs. Frankfurter brisket venison biltong pancetta turkey cow spare ribs salami jowl boudin strip steak. Bresaola landjaeger shank, tongue strip steak ham hock drumstick jerky short ribs pork chop pancetta meatball turducken beef. Kevin andouille tri-tip tail jowl corned beef jerky salami cow burgdoggen capicola. Jerky sirloin bacon swine, ham hock brisket porchetta shoulder t-bone.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="portfolio">
+	<div class="container">
+		<div class="row text-center">
+			<h1>Portfolio</h1>
+			<?php
+			foreach ($portfolio->loop() as $id) {
+			?>
+			<div class="col-md-4">
+				<div class="card">
+					<div class="portfolio" style="background-image: url('./assets/img/portfolio/<?=$portfolio->get($id, "image");?>');"></div>
+					<h3><a href="<?=$portfolio->get($id, "url");?>"><?=$portfolio->get($id, "name");?></a></h3>
+				</div>
+			</div>
+			<?php
+			}
+			?>
+		</div>
+	</div>
+</div>
 </body>
 </html>

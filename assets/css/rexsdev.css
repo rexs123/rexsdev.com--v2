@@ -1,9 +1,93 @@
+/* SITE ITEMS */
 body {
 	background-color: #151514;
 	font-family: 'Roboto', sans-serif;
 	color: #727272;
 }
 
-h1, h2, h3, h4, h5 {
-	font-weight: 500;
+h1 {
+	color: #fff;
+	font-size: 32px;
+}
+
+/* HEADER */
+#header {
+	border-bottom: 1px solid #222;
+	padding: 15px 0 25px 0;
+}
+
+#header a {
+	font-weight: 300;
+}
+
+/* ABOUT */
+#about {
+	background-color: #101010;
+	min-height: 350px;
+	color: #888;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid #222;
+}
+
+#about h1 {
+	margin: 0;
+}
+
+/* PORTFOLIO */
+#portfolio {
+	background-color: #0f0f0f;
+	min-height: 500px;
+	color: #888;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#portfolio .card {
+	border-color: #222;
+	margin-bottom: 25px;
+}
+
+#portfolio .card h3 {
+	margin: 20px 0 0 0;
+}
+
+#portfolio .card h3 a {
+	font-weight: 300;
+}
+
+#portfolio .portfolio {
+	min-height: 200px;
+	background-position-x: center;
+	background-position-y: center;
+	background-size: cover;
+	background-repeat-x: no-repeat;
+	background-repeat-y: no-repeat;
+	background-origin: initial;
+	background-clip: initial;
+	background-color: initial;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/* CARD */
+.card {
+	background-color: #151514;
+	border-left: 5px solid #ffb204;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	padding: 25px;
+	-moz-box-shadow: 0 0px 9px 1px rgba(14, 14, 14, 0.5);
+	-webkit-box-shadow: 0 0px 9px 1px rgba(14, 14, 14, 0.5);
+	box-shadow: 0 0px 9px 1px rgba(14, 14, 14, 0.5);
+}
+
+.card p {
+	font-size: 15px;
+	font-weight: 300;
+	color: #8e8e8e;
 }
