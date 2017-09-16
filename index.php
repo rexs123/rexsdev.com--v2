@@ -75,7 +75,7 @@
 		<div class="row text-center">
 			<h1>Portfolio</h1>
 			<?php
-			foreach ($portfolio->loop() as $id) {
+				foreach ($portfolio->loop() as $id) {
 			?>
 			<div class="col-md-4">
 				<div class="card">
@@ -84,7 +84,7 @@
 				</div>
 			</div>
 			<?php
-			}
+				}
 			?>
 		</div>
 	</div>
